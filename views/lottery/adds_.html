@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>批量添加</title>
+	</head>
+	<body>
+		<form action="/addBat/add">
+			请填写要添加的数量:<br>
+			<input type="text" name="count" /><br />
+			<input type="submit" value="添加" />
+		</form>
+		{{ if(msg){ }} 
+			{{=msg}} 
+		{{ } }}
+	</body>
+</html>

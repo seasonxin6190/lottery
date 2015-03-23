@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>抽奖</title>
+		{{include ../common/base.html}}
+	</head>
+
+<body>
+    <div id="indexContent" class="content container-fluid" style="padding-left: 0">
+        <div class="content-page">
+            <center><img class="img-responsive" src="/images/index_01.jpg"></center>
+            <center><img class="img-responsive" src="/images/index_02.jpg"></center>
+            <center><img class="img-responsive" src="/images/index_03.png"></center>
+        </div>
+        <div class="content-page">
+            <center><img class="img-responsive" src="/images/index2_01.jpg"></center>
+            <center><img class="img-responsive" src="/images/index2_02.jpg"></center>
+            <center><img class="img-responsive" src="/images/index2_03.jpg"></center>
+            <div class="content-page-list">
+                <div class="prize-ranking">获奖名单</div>
+                <div class="prize">iphone6</div>
+                <ul class="name-list" id='winnerList'>
+
+<!--<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li> -->
+
+                </ul>
+                <div class="luck-draw-btn" id="luckID" style="display:none">戳一下抽奖!</div>
+					<ul class="prize-list">
+					   {{ for(var i=0; i < award.length; i++) { }} 
+					    <li data-id='{{=award[i]["id"]}}_{{=result["id"]}}'>{{= award[i]['level'] }}</li>
+					        {{ }; }}
+					</ul>
+            </div>
+        </div>
+        <div class="content-page">
+            <center><img class="img-responsive" src="/images/index-bg3_01.jpg"></center>
+            <center><img class="img-responsive" src="/images/index-bg3_02.jpg"></center>
+            <center><img class="img-responsive" src="/images/index-bg3_03.jpg"></center>
+         <div class="ranking-list" id="rankingList">
+<!--             <ul class="ranking-list" id="rankingList">
+	
+</ul> -->
+ <!-- 				{{ joiner.forEach( function(item) {	 }}
+ 					<li><img src='{{= item['photo'] }}'>{{= item['userName'] }}</li>
+ 				{{  }); }}  -->
+
+			<h1 class="ranking-first">第一名</h1>
+			<ul class="ranking-first-name-list">
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div class="next"><img src="/images/btn_03.png"></div></li>
+			</ul>
+			<h1 class="ranking-two">第二名</h1>
+			<ul class="ranking-first-name-two">
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>
+			    <li><div class="next"><img src="/images/btn_03.png"></div></li>
+			</ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+    <script>
+        seajs.use('index/index',function(Index){
+            Index.init();
+        });
+    </script>
+
+</html>

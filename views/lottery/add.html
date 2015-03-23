@@ -1,0 +1,69 @@
+
+
+
+	<div class="container">
+		<h4><strong>个人信息录入</strong></h4>
+
+<!--   <div class="search-position">
+  <form ng-controller="UploadCtrl">
+      
+      <input  type='file' file-input="imgFiles" id="shopLogo" name='logo' style="display:none;"  >
+      <input  type='image'src="images/default_img.png" width="80" height="80" onclick='logo.click()'>
+
+       <div class="canvas"><canvas id='canvas' width="80" height="80" onclick='logo.click()' ></canvas></div> 
+
+  </form>
+</div>
+ -->
+ <style>
+		.personal-logo{text-align: center;margin-bottom: 100px;}
+		.search-position{position: relative;}
+        #canvas{position: absolute;border-radius: 40px;z-index: -1}
+        .canvas{margin:-85px 80px 0 0}
+		#userLogo{border-radius: 40px;}
+ </style>
+
+<div style="clear: both"></div>
+		<form class="form-horizontal" role="form" name="ibeaconForm" >
+			
+			<div class='search-position personal-logo'>	
+					<input  type='file' file-input="imgFiles" id="shopLogo" name='logo' ng-model="iuser.logo" style="display:none;"  >
+	      			<input  type='image'src="/images/default_img.png" width="80" height="80" onclick='logo.click()'>
+	       			<div class="canvas"><canvas id='canvas' file-logo="imgLogo" width="80" height="80" ></canvas></div> 
+	       			<img ng-src="/logo/{{iuser.logo}}" id="userLogo" file-logo="imgLogo" width="80" height="80">
+	       			
+	       			<!-- <img ng-src="/logo/{{userInfo.logo}}" id="userLogo" file-logo="imgLogo" width="80" height="80"> -->
+	       		</div>	
+			
+			<div class="form-group">
+				<label for="name" class="col-sm-2 control-label">N</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" placeholder="姓名" ng-model="iuser.name" ng-maxlength=8 required>
+					
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="phone" class="col-sm-2 control-label">P</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" placeholder="电话（手机号码）" ng-minlength=11 ng-model="iuser.phone" required>
+					
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="email" class="col-sm-2 control-label">L</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control" placeholder="邮箱（可选填）" ng-model="iuser.email">
+				</div>
+			</div>
+			<div class="form-group">
+		      <div class="col-sm-offset-2 col-sm-10">
+		         <button type="submit" ng-disabled="ibeaconForm.$invalid" class="btn btn-success btn-lg btn-block" ng-click="registerIuser()">保存</button>
+		      </div>
+   			</div>
+   			
+		</form>
+	
+
+	</div>
+

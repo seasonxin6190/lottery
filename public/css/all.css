@@ -1,0 +1,232 @@
+.content {
+  position: relative;
+  height: 100%;
+}
+.content .content-page {
+  height: 100%;
+  width: 100%;
+}
+ul li{
+  list-style: none;
+
+}
+.content .pagex1 {
+  background: url("/images/index1.png") no-repeat center;
+}
+.content .pagex2 {
+  background: url("/images/index2.png") no-repeat center;
+}
+.content .pagex2 .content-page-list {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -414px;
+  margin-left: -512px;
+}
+.content .pagex2 .content-page-list .prize-ranking {
+  color: #552b00;
+  font-size: 40px;
+  margin-top: 70px;
+  font-weight: inherit;
+}
+.content .pagex2 .content-page-list .prize {
+  margin-left: 50px;
+  width:200;
+  font-size: 25px;
+/*   position: absolute;
+top: 50px;
+left: 35px; */
+  
+
+}
+.content .pagex2 .content-page-list .name-list {
+    position: absolute;
+    top: 170px;
+    left:80px; 
+    
+}
+.content .pagex2 .content-page-list .name-list li {
+  float: left; 
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color:#fff;
+}
+.content .pagex2 .content-page-list .name-list li div {
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 25px;
+}
+.content-page-list .luck-draw-btn {
+  background: url("/images/btn_02.png");
+  width: 283px;
+  height: 81px;
+  padding: 15px 60px;
+  font-weight: bold;
+  color: #520f0d;
+  font-size: 30px;
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  margin-left: -140px;
+  cursor: pointer;
+}
+
+.content .pagex2 .content-page-list .luck-draw-selected {
+  background: url("/images/btn_01.png");
+}
+.content .pagex2 .content-page-list .prize-list {
+  position: absolute;
+  top: 550px;
+  left:50px;
+}
+/* .content .pagex2 .content-page-list .prize-list li {
+  display: block;
+  width: 146px;
+  height: 139px;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+  font-size: 25px;
+  margin: 10px;
+  text-align: center;
+  line-height: 120px;
+  color: #f2f2f2;
+  background: url("/images/button_03.png");
+} */
+#winnerList {position: absolute;top:20%;left:20%;width: 700px}
+.ranking-list li{float: left;margin-right:5px;color: #fff;font-size: 16px;}
+.content-page-list .prize-list li {
+  display: block;
+  float: left;
+  width: 146px;
+  height: 139px;
+  line-height: 127px;
+  text-align: center;
+  background: url("/images/button_03.png");
+  margin: 20px;
+  font-size: 30px;
+  color: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content .pagex2 .content-page-list .prize-list .li-selected {
+  background: url("/images/button_04.png");
+}
+.content .pagex3 {
+  background-color: #FFD802;
+}
+.content .pagex3 .content-page-list {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -414px;
+  margin-left: -512px;
+}
+.content .pagex3 .content-page-list .ranking-first {
+  position: absolute;
+  top: 145px;
+  left: 60px;
+}
+.content .pagex3 .content-page-list .ranking-list-first {
+  position: absolute;
+  top: 200px;
+  left: 60px;
+}
+.content .pagex3 .content-page-list .ranking-two {
+  position: absolute;
+  top: 490px;
+  left: 60px;
+}
+.content .pagex3 .content-page-list .next {
+  padding: 40px;
+  cursor: pointer;
+}
+.content .pagex3 .content-page-list .ranking-list-two {
+  position: absolute;
+  top: 540px;
+  left: 60px;
+}
+.content .pagex3 .content-page-list .ranking {
+  color: #552b00;
+  font-weight: inherit;
+  font-size: 30px;
+}
+.content .pagex3 .content-page-list .ranking-list {
+  border-top: 2px dashed #FD9C03;
+  padding-top: 30px;
+}
+ .content .pagex3 .content-page-list .ranking-list li {
+  float: left;
+  list-style: none;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 25px;
+  color: #000011;
+}
+/*
+.content .pagex3 .content-page-list .ranking-list li label {
+  text-align: center;
+  font-size: 25px;
+  color: #000011;
+} */
+
+.pagex-nav li:before {
+  border-radius: 100%;
+  border: 2px solid #584200;
+}
+.pagex-nav li.selected:before {
+  background-color: #584200;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "微软雅黑";
+  overflow-y: hidden;
+}
+iframe {
+  border: none;
+  padding: none;
+}
+/* ========================  Adrai start  ===================== */
+.hiddenBox {
+  display: none;
+}
+.floatLeft {
+  float: left;
+}
+.relative {
+  position: relative;
+}
+/* ========================  Adrai end  ===================== */
+
+
+/*button*/
+.prize-list li{
+    background-image: url('/images/btn_02.png');
+}
+.prize-list li.selected{
+    background-image: url('/images/button_04.png');
+}
+.prize-list li.disabled{
+    background-image: url('/images/button_05.png');
+}
+
+/*third page*/
+.winner{padding:5px 70px;height: 1100px;background-color: #ffd800;}
+.winner-list{background-color: #ffd800;}
+.winner ul{list-style-type:none;text-align: center; }
+.winner ul li{float: left;margin-right: 5px}
+
+

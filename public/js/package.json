@@ -1,0 +1,58 @@
+{
+  "name": "stilljs",
+  "version": "0.0.6",
+  "description": "Only Test, Do not Download !! Old Name: eeriejs",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Adrai"
+  },
+  "spm": {
+    "source": "./src",
+    "src": [
+      "common",
+      "valid",
+      "pagex",
+      "ajaxfile",
+      "touch"
+    ],
+    "withs": [
+      "seajs"
+    ],
+    "output": "still.min",
+    "target": "./lib",
+    "cleanDist": true
+  },
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-cmd-transport": "0.2.1",
+    "grunt-cmd-concat": "0.2.1",
+    "grunt-contrib-uglify": "0.2.0",
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-contrib-cssmin": "0.6.0",
+    "grunt-contrib-clean": "0.4.1"
+  },
+  "gitHead": "7ad07c0bae006a63491cd803576aba9a0ed1acda",
+  "_id": "stilljs@0.0.6",
+  "_shasum": "1dce5aea66edb72239ad9638348c63e9b99ffa15",
+  "_from": "stilljs@0.0.6",
+  "_npmVersion": "1.4.14",
+  "_npmUser": {
+    "name": "adraix",
+    "email": "elegy7@hotmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "adraix",
+      "email": "elegy7@hotmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "1dce5aea66edb72239ad9638348c63e9b99ffa15",
+    "tarball": "http://registry.npmjs.org/stilljs/-/stilljs-0.0.6.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/stilljs/-/stilljs-0.0.6.tgz"
+}

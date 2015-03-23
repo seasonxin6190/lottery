@@ -1,0 +1,175 @@
+.content {
+  position: relative;
+  height: 100%;
+}
+.content .content-page {
+  height: 100%;
+  width: 100%;
+}
+.pagex-nav li:before {
+  border-radius: 100%;
+  border: 2px solid #584200;
+}
+.pagex-nav li.selected:before {
+  background-color: #584200;
+}
+.content-page-list{
+  text-align: center;
+}
+.content-page-list .prize-ranking {
+  position: absolute;
+  top: 30px;
+  left: 55%;
+  margin-left: -130px;
+  color: #520f0d;
+  font-size: 40px;
+  font-weight: bold;
+}
+.content-page-list .prize {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  margin-left: -440px;
+  font-size: 25px;
+  width:220;
+
+}
+.content-page-list .name-list {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  margin-left: -370px;
+}
+.content-page-list .luck-draw-btn {
+  background: url("/images/btn_02.png");
+  width: 283px;
+  height: 81px;
+  padding: 15px 60px;
+  font-weight: bold;
+  color: #520f0d;
+  font-size: 30px;
+  position: absolute;
+  top: 430px;
+  left: 50%;
+  margin-left: -140px;
+  cursor: pointer;
+}
+.content-page-list .prize-list {
+  position: absolute;
+  top: 570px;
+  left: 50%;
+  margin-left: -460px;
+}
+.content-page-list .name-list li div {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+.content-page-list li {
+  float: left;
+  margin: 10px;
+  list-style: none;
+}
+.content-page-list .prize-list li {
+  display: block;
+  width: 144px;
+  height: 134px;
+  line-height: 127px;
+  text-align: center;
+  background: url("../../images/button_03.png");
+  margin: 20px;
+  font-size: 30px;
+  color: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ranking-list .ranking-first {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  margin-left: -450px;
+  font-weight: bold;
+  color: #520f0d;
+  float: left;
+}
+.ranking-list .ranking-first-name-list {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  margin-left: -460px;
+}
+.ranking-list .ranking-two {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  margin-left: -450px;
+  font-weight: bold;
+  color: #520f0d;
+}
+.ranking-list .ranking-first-name-two {
+  position: absolute;
+  top: 530px;
+  left: 50%;
+  margin-left: -460px;
+}
+.ranking-list li {
+  float: left;
+  margin: 10px;
+  list-style: none;
+}
+.ranking-list div {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  color: #222;
+  font-weight: bold;
+}
+.ranking-list .next {
+  padding: 35px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: "微软雅黑";
+  overflow-y: hidden;
+}
+iframe {
+  border: none;
+  padding: none;
+}
+/* ========================  Adrai start  ===================== */
+.hiddenBox {
+  display: none;
+}
+.floatLeft {
+  float: left;
+}
+.relative {
+  position: relative;
+}
+/* ========================  Adrai end  ===================== */
+
+/*button*/
+.prize-list li{
+    background-image: url('/images/btn_02.png');
+}
+.prize-list li.selected{
+    background-image: url('/images/button_04.png');
+}
+.prize-list li.disabled{
+    background-image: url('/images/button_05.png');
+}
+
+/*third page*/
+.winner{padding:5px 70px;height: 1100px;background-color: #ffd800;}
+.winner-list{background-color: #ffd800;}
+.winner ul{list-style-type:none;text-align: center; }
+.winner ul li{float: left;margin-right: 5px}

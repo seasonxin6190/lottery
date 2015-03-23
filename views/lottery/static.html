@@ -1,0 +1,61 @@
+<html><head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>抽奖</title>
+		<link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/all.css">
+<!-- Jquery -->
+<script src="/js/dist/jquery-1.10.2.min.js"></script>
+<script src="/js/dist/still.min.js"></script>
+<script src="/js/config.js"></script>
+
+	<style>.pagex-nav{position:relative;display:inline-block;list-style-type:none;float:right;padding-left:25px;padding-right:25px;margin:-150px 0 -150px 0;top:60%;background-color:rgba(45,45,45,.8);filter:progid:DXImageTransform.Microsoft.gradient(enabled="true", startColorstr="#CC2D2D2D", endColorstr="#CC2D2D2D");z-index:100}.pagex-nav li{margin-top:20px;margin-bottom:20px;cursor:pointer}.pagex-nav li:before{display:inline-block;width:12px;height:12px;background-color:#fff;content:''}.pagex-nav li:hover:before{background-color:#000}.pagex-nav li.selected:before{background-color:#000}</style></head>
+
+<body>
+    <div id="indexContent" class="content container-fluid" style="padding-left: 0">
+        <div class="content-page pagex1" style="z-index: 3; position: absolute; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; transition-property: transform; -webkit-transition-property: transform; transform: translateY(-877px);">
+            <center><img class="img-responsive" src="/images/index_01.jpg"></center>
+            <center><img class="img-responsive" src="/images/index_02.jpg"></center>
+            <center><img class="img-responsive" src="/images/index_03.png"></center>
+        </div>
+        <div class="content-page pagex2" style="z-index: 2; position: absolute; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; transition-property: transform; -webkit-transition-property: transform;">
+            <center><img class="img-responsive" src="/images/index2_01.jpg"></center>
+            <center><img class="img-responsive" src="/images/index2_02.jpg"></center>
+            <center><img class="img-responsive" src="/images/index2_03.jpg"></center>
+            <div class="content-page-list">
+                <div class="prize-ranking">获奖名单</div>
+                <div class="prize">现金2000</div>
+                <ul class="name-list" id="winnerList">
+                    <li><div><img class="img-responsive" data-id="0_5_32_1" src="/images/pt.jpg" width="128" height="125"><div>yeo</div></div></li>
+                    <li><div><img class="img-responsive" data-id="1_9_32_1" src="/images/head_05.jpg" width="128" height="125"><div>VOI</div></div></li>
+                </ul>
+                <div class="luck-draw-btn" id="luckID" data-id="32_1" style="background: url(http://localhost:3000/images/btn_02.png);">戳一下抽奖!</div>
+					<ul class="prize-list">
+					    
+					    <li data-id="1_1">一等奖</li>
+					         
+					    <li data-id="32_1" class="selected">二等奖</li>
+					         
+					    <li data-id="33_1">三等奖</li>
+					         
+					    <li data-id="34_1" class="disabled">四等奖</li>
+					         
+					    <li data-id="35_1">五等奖</li>
+					        
+					</ul>
+            </div>
+        </div>
+        <div class="content-page pagex3" style="z-index: 1; position: absolute; transition-duration: 0.5s; -webkit-transition-duration: 0.5s; transition-property: transform; -webkit-transition-property: transform;">
+
+		<div class="winner" id="rankingList" style="overflow-y: auto; height: 900px; "></div>
+
+        </div>
+    <ul class="pagex-nav right" id="pagexNav"><li data-index="1" class=""></li><li data-index="2" class="selected"></li><li data-index="3"></li></ul></div>
+
+
+    <script>
+        seajs.use('index/index',function(Index){
+            Index.init();
+        });
+    </script>
+
+</body></html>

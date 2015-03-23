@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>抽奖</title>
+		{{include ../common/base.html}}
+	</head>
+
+<body>
+    <div id="indexContent" class="content container-fluid" style="padding-left: 0">
+        <div class="content-page"></div>
+        <div class="content-page">
+            <div class="content-page-list">
+                <center><div class="prize-ranking">获奖名单</div></center>
+                <div class="prize"></div>
+                <center style="display:inline;">
+	                <ul class="ranking-list" id='winnerList'>
+					<!--<li><div><img class="img-responsive" src="/images/head_05.jpg"></div><div>德玛西亚</div></li>-->
+
+	                </ul>
+				</center>
+                <div class="luck-draw-btn" id="luckID" style="display:none">戳一下抽奖!</div>
+					<ul class="prize-list">
+					   {{ for(var i=0; i < award.length; i++) { }} 
+					    <li data-id='{{=award[i]["id"]}}_{{=result["id"]}}'>{{= award[i]['level'] }}</li>
+					        {{ }; }}
+					</ul>
+            </div>
+        </div>
+        <div class="content-page">
+
+		<div class="winner" id="rankingList" style="overflow-y: auto; height: 768px; ">
+		 
+			<!--<hr style="clear:both">
+			<h1>第一名</h1>
+			<ul class="winner-list">
+				<li><img class="thumbnail" src="/images/head_05.jpg"><label>德玛西亚</label></li>
+			</ul>
+			 -->
+			
+		</div>
+
+        </div>
+    </div>
+
+</body>
+    <script>
+        seajs.use('index/index',function(Index){
+            Index.init();
+        });
+    </script>
+
+</html>
